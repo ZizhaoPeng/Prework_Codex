@@ -2,3 +2,6 @@ interface:
   display_name: "Prework_Codex"
   short_description: "Build verified handoffs that workers can continue"
   default_prompt: "Use $prepare-execution-handoff to turn this coding task into a verified state another agent can continue."
+
+policy:
+  allow_implicit_invocation: true
