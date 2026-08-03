@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create and verify evidence-backed execution relay contracts."""
+"""Create and verify evidence-backed Prework_Codex continuation contracts."""
 
 from __future__ import annotations
 
