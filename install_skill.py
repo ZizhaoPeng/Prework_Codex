@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install the Execution Relay for Codex skill into a Codex home or directory."""
+"""Install the Prework_Codex skill into a Codex home or directory."""
 
 from __future__ import annotations
 
@@ -133,7 +133,7 @@ def _destination_from_args(args: argparse.Namespace) -> Path:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Copy the bundled Execution Relay for Codex skill to a chosen location."
+        description="Copy the bundled Prework_Codex skill to a chosen location."
     )
     location = parser.add_mutually_exclusive_group()
     location.add_argument(

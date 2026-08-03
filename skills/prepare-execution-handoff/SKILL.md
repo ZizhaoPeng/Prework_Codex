@@ -3,7 +3,7 @@ name: prepare-execution-handoff
 description: Prepare evidence-backed coding handoffs that another Codex agent can continue without reconstructing the repository context. Use for large or execution-heavy tasks that will move from a lead agent to one or more implementation workers, especially when the lead must inspect the code, eliminate alternatives, land and verify a first real change, freeze write ownership, generate worker briefs, collect receipts, and independently review the result.
 ---
 
-# Prepare Execution Handoff
+# Prework_Codex
 
 Turn a partially understood coding request into a verified continuation point. Preserve the working state that matters for execution instead of handing over a standalone plan.
 

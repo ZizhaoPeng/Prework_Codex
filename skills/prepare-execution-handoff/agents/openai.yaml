@@ -1,4 +1,4 @@
 interface:
-  display_name: "Execution Relay"
+  display_name: "Prework_Codex"
   short_description: "Build verified handoffs that workers can continue"
   default_prompt: "Use $prepare-execution-handoff to turn this coding task into a verified state another agent can continue."

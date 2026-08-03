@@ -1,4 +1,4 @@
-"""Black-box coverage for the execution relay command-line lifecycle."""
+"""Black-box coverage for the Prework_Codex command-line lifecycle."""
 
 from __future__ import annotations
 

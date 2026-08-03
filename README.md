@@ -1,10 +1,14 @@
-# Execution Relay for Codex
+# Prework_Codex
 
-Execution Relay for Codex is a model-agnostic skill for turning a partially explored coding task into a verified handoff. It keeps the working context, evidence, ownership boundaries, and acceptance checks explicit so another agent can continue without repeating repository discovery.
+[English](README.md) | [简体中文](README.zh-CN.md)
+
+Prework_Codex is a model-agnostic Codex skill for turning a partially explored coding task into a verified continuation point. Before implementation moves to another agent, the lead inspects the real repository, records evidence and rejected routes, lands one meaningful change, validates it, and freezes a bounded work contract. The next agent continues from that proven state instead of reconstructing the project from a standalone plan.
+
+The project keeps execution context, write ownership, command evidence, artifact hashes, and acceptance checks explicit. It also separates worker execution from final review, making multi-agent handoffs easier to audit and less likely to duplicate repository discovery.
 
 ## Install
 
-The standard-library-only installer copies `skills/prepare-execution-handoff` into a Codex home. The default home is `$CODEX_HOME` when set, otherwise `~/.codex`:
+The standard-library-only installer copies the stable `$prepare-execution-handoff` skill into a Codex home. The default home is `$CODEX_HOME` when set, otherwise `~/.codex`:
 
 ```bash
 python3 install_skill.py --codex-home ~/.codex
@@ -20,7 +24,7 @@ An existing destination is left untouched unless `--force` is supplied. Forced u
 
 ## Workflow
 
-Use the skill to establish a repository baseline, define bounded work items, execute and capture validation for an anchor change, freeze the continuation contract, and collect append-only worker receipts for independent review. The included relay script executes verification commands and checks contract identity, changed-path ownership, repository containment, artifact hashes, receipt coverage, reviewer separation, and integrated-tree scope.
+Use the skill to establish a repository baseline, define bounded work items, execute and capture validation for an anchor change, freeze the continuation contract, and collect append-only worker receipts for independent review. The included state tool executes verification commands and checks contract identity, changed-path ownership, repository containment, artifact hashes, receipt coverage, reviewer separation, and integrated-tree scope.
 
 Invoke it in Codex with a request such as:
 
