@@ -1,7 +1,5 @@
 # Prework_Codex
 
-[English](README.md) | [简体中文](README.zh-CN.md)
-
 Prework_Codex is a model-agnostic Codex skill for turning a partially explored coding task into a verified continuation point. Before implementation moves to another agent, the lead inspects the real repository, records evidence and rejected routes, lands one meaningful change, validates it, and freezes a bounded work contract. The next agent continues from that proven state instead of reconstructing the project from a standalone plan.
 
 The project keeps execution context, write ownership, command evidence, artifact hashes, and acceptance checks explicit. It also separates worker execution from final review, making multi-agent handoffs easier to audit and less likely to duplicate repository discovery.
